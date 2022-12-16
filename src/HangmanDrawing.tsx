@@ -93,15 +93,19 @@ const LEFT_LEG = styled.div({
   transformOrigin: "right bottom",
 });
 
-export default function HangmanDrawing() {
+const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
+
+type HangmanDrawingProps = {
+  numberOfGuesses: number;
+};
+export default function HangmanDrawing({
+  numberOfGuesses,
+}: HangmanDrawingProps) {
   return (
     <Div>
-      <HEAD />
-      <BODY />
-      <RIGHT_ARM />
-      <LEFT_ARM />
-      <RIGHT_LEG />
-      <LEFT_LEG />
+      {BODY_PARTS.slice(0, numberOfGuesses).map((BodyPart, i) => (
+        <BodyPart key={i} />
+      ))}
       <HangStick />
       <TopStick />
       <AlignStick />
