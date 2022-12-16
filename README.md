@@ -2,6 +2,8 @@
 
 hangman web app created by vite+React+xstate
 
+[Demo](https://haohow123.github.io/react-hangman/)
+
 ## Prerequisites
 
 - nodeJs
