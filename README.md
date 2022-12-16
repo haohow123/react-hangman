@@ -31,4 +31,4 @@ yarn dev
 
 ## Impression by
 
-- (This Is A Great Beginner React/TypeScript Project)[https://youtu.be/-ONUyenGnWw]
+- [This Is A Great Beginner React/TypeScript Project](https://youtu.be/-ONUyenGnWw)
